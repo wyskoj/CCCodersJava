@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: A+
+    is_correct: false
+  - text: A
+    is_correct: false
+  - text: B
+    is_correct: false
+  - text: C
+    is_correct: true
+  - text: D
+    is_correct: false
+  - text: F
+    is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+  - name: src/Main.java
+    visible: true

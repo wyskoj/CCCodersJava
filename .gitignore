@@ -1,0 +1,6 @@
+# Project exclude paths
+/.coursecreator/
+/.gradle/
+/Week 3/Comparing numbers/build/
+/Week 3/Comparing numbers/out/
+/Week 3/Comparing numbers/out/production/classes/
