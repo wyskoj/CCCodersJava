@@ -4,3 +4,16 @@ files:
   visible: false
 - name: src/Task.java
   visible: true
+  placeholders:
+  - offset: 279
+    length: 13
+    placeholder_text: /* TODO */
+  - offset: 379
+    length: 13
+    placeholder_text: /* TODO */
+  - offset: 431
+    length: 28
+    placeholder_text: /* TODO */
+  - offset: 490
+    length: 223
+    placeholder_text: /* TODO */

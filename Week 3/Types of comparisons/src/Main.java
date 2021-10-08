@@ -1,3 +1,4 @@
+@SuppressWarnings("ConstantConditions")
 public class Main {
    
    public static void main(String[] args) {

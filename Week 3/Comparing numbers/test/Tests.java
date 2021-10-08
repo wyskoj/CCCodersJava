@@ -16,13 +16,15 @@ public class Tests {
 		final ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));
 		Task.main(new String[]{});
-		assertEquals("Your program should say the number is less than or equal to 5.", "Your number is less than or equal to 5!\n", out.toString());
+		assertEquals("Your program should say the number is less than or equal to 5.", ("Your number is less than or " +
+				"equal to 5!").trim(), out.toString().trim());
 		
 		// Check 7
 		System.setIn(new ByteArrayInputStream("7".getBytes(StandardCharsets.UTF_8)));
 		final ByteArrayOutputStream out2 = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out2));
 		Task.main(new String[]{});
-		assertEquals("Your program should say the number is larger than 5.", "Your number is larger than 5!\n", out2.toString());
+		assertEquals("Your program should say the number is larger than 5.", "Your number is larger than 5!".trim(),
+				out2.toString().trim());
 	}
 }

@@ -20,7 +20,7 @@ To finish this example:
 
 Stuck on the input?
 <div class="hint"> 
-    Remember that once we have created our Scanner, we can use it go get input from the user.
+    Remember that once we have created our Scanner, we can use it to get input from the user.
     In this example, we want to get an integer that the user types.
     Recall the function for getting input is <code>nextInt()</code>.
 </div>

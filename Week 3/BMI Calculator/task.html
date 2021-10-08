@@ -1,4 +1,9 @@
 <html>
+<style>
+    th, td {
+        border: 1px solid grey;
+    }
+</style>
 <script type="text/javascript" id="MathJax-script" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
 </script>
@@ -6,8 +11,9 @@
 <p>In this task, we'll create a BMI calculator (body mass index). It is calculated from the person's weight and height
     in kilograms and meters.</p>
 
-<p>A person's BMI is calculated by \(\frac{w}{h^2}\). Once we calculate this value, we can output a string describing the
-person.</p>
+<p>A person's BMI is calculated by \(\frac{W}{H^2}\). Once we calculate this value, we can output a string describing
+    the
+    person.</p>
 
 <table>
     <thead>
@@ -36,6 +42,56 @@ person.</p>
     </tbody>
 </table>
 
+To finish this task, complete each <code>/* TODO */</code>.
+<ol>
+    <li>Getting the user input for weight and height</li>
+    <div class="hint">
+        In this task, the Scanner has been created for you. Use it to collect some input. Remember when we used Scanner
+        to get text?
+        We used the <code>.nextLine()</code> function. In this case, we want to collect decimal numbers
+        (<code>double</code>).
+        Therefore, we can use the <code>.nextDouble()</code> function.
 
+    </div>
+    <li>Calculating the BMI</li>
+    <div class="hint">
+        We calculate the BMI by dividing the <em>weight</em> by <em>height<sup>2</sup></em>. To divide two numbers, we
+        can
+        use the <code>/</code> operator. To raise a number to another power, use the <code>Math.pow()</code> function.
+        The function wants two numbers inside its parenthesis. The first number is the lower number. The second number
+        is the exponent.
+        Separate the numbers with a comma.<br><br>
+        <em>Remember, even though <code>weight</code> and <code>height</code> are variables, they act like numbers, so
+            you can write them inside the parenthesis.</em>
+    </div>
+    <li>Printing the BMI category</li>
+    <div class="hint">
+        To print the BMI category, use a chain of <code>if</code>, <code>else if</code>, and <code>else</code>. Your
+        first check
+        should see if the BMI is less than 18.5 (look at the table above). If it is, you should print
+        <code>Underweight</code>.
+        If the conditional is false, check to see if it less than 25. You can write that like this:
+        <pre>
+            if (bmi < 18.5) {
+              // write your print statement here!
+            } else if (bmi < 25) {
+              // write your next print statement here!
+            } // keep going!
+        </pre>
+        For this task, you should have one <code>if</code>, two <code>else if</code>s, and one <code>else</code>.
+    </div>
+
+</ol>
+
+<p>Here are some example numbers you can use to test your program:</p>
+<ul>
+    <li>Weight: 50, Height: 1.81, Category: Underweight</li>
+    <li>Weight: 70, Height: 1.69, Category: Healthy</li>
+    <li>Weight: 100, Height: 1.85, Category: Overweight</li>
+    <li>Weight: 110, Height: 1.6, Category: Obese</li>
+</ul>
+
+Here are some links to convert your <a href="https://www.unitjuggler.com/convert-mass-from-lbs-to-kg.html">weight</a>
+and <a href="https://www.rapidtables.com/convert/length/feet-inch-to-meter.html">height</a> to metric.
 
 </html>

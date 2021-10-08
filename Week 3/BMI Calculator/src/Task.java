@@ -17,6 +17,14 @@ public class Task {
 		double bmi = weight / Math.pow(height, 2);
 		
 		// Print BMI category
-		
+		if (bmi < 18.5) {
+			System.out.println("Underweight");
+		} else if (bmi < 25) {
+			System.out.println("Healthy");
+		} else if (bmi < 30) {
+			System.out.println("Overweight");
+		} else {
+			System.out.println("Obese");
+		}
 	}
 }
