@@ -1,0 +1,50 @@
+<html>
+<style>
+    th, td {
+        border: 1px solid grey;
+    }
+</style>
+<h1>Logical operators</h1>
+
+<p>We saw previously how to compare two numbers. What if we needed to make more than one comparison? We can use
+    a <em>logical operator</em>. Put simply, this is how we tell the computer to say "and", "or", and "not".</p>
+
+<table>
+    <tr>
+        <th>and</th>
+        <th>or</th>
+        <th>not</th>
+    </tr>
+    <tr>
+        <td><code>&amp;&amp;</code></td>
+        <td><code>||</code></td>
+        <td><code>!</code></td>
+    </tr>
+</table>
+
+<h2>And</h2>
+The first if-statement checks if both numbers are positive. Fill in the TODO with the code to
+do this.
+
+<div class="hint">
+  To check if a number is positive, it has to be greater than 0. To check if two things are both true, write both checks and put a <code>&amp;&amp;</code> in between them.
+</div>
+
+<h2>Or</h2>
+The second if-statement checks if <code>numA</code> or <code>numB</code> is equal to <code>4</code>. Fill in the TODO with the code to
+do this.
+
+<div class="hint">
+  Recall to compare if numbers are equal, we use two equal signs (<code>==</code>). To see if at least one of two checks is true, write a <code>||</code> in between.
+</div>
+
+<h2>Not</h2>
+<p>The second if-statement checks if <code>word</code> is adverb. We will use the <code>.endsWith()</code> function to see if the
+    word ends with "ly". The function wants a string in its parenthesis, like <code>.endsWith("ly")</code>. Write an exclamation mark
+    at the beginning of the check to negate it.</p>
+<div class="hint">
+  Write it like this:<br>
+    <code>!word.endsWith("ly")</code>
+</div>
+
+</html>
